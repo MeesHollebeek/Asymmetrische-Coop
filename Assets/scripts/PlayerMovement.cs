@@ -89,14 +89,14 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.LeftShift) && !Tired)
         {
            
-            speed = 11;
+          //  speed = 11;
             isSprinting= true;
             dValue = 4;
            
         }
         if (Input.GetKeyUp(KeyCode.LeftShift) || Tired)
         {
-            speed = 8;
+          //  speed = 0;
             isSprinting= false;
             dValue = 1;
         }
